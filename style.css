@@ -96,3 +96,7 @@ main{
     background-color: honeydew;
     cursor: pointer;
 }
+
+.imagens .tags > div:hover{
+    background-color: pink;
+}
