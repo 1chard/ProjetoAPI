@@ -3,3 +3,96 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    min-height: 100vh;
+    width: 100%;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+}
+
+main{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: space-evenly;
+}
+
+.input{
+    position: relative;
+    background-color: red;
+    border: 1px groove #444;
+    z-index: 2;
+    display: flex;
+}
+
+.input > img{
+    width: 1.3em;
+    height: 1.3em;
+    margin: 0.1rem;
+}
+
+.input > input{
+    height: 1.5rem;
+    appearance: none;
+    border: 0;
+    outline: 0;
+    z-index: 1;
+    padding-left: 1em;
+}
+
+.imagens{
+    position: relative;
+    border: 2px #444 ridge;
+    background-size: cover;
+}
+
+.imagens .likes{
+    border: 2px solid greenyellow;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 1em;
+    background-color: honeydew;
+    z-index: 2;
+}
+
+.imagens .comments{
+    border: 2px solid greenyellow;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 1em;
+    background-color: honeydew;
+    z-index: 2;
+}
+
+.imagens .tags{
+    position: absolute;
+    top: 1em;
+    right: 0;
+    background-color: honeydew;
+    z-index: 2;
+}
+
+.imagens > a{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.imagens .tags > div{
+    padding: 1em;
+    border: 2px solid greenyellow;
+    background-color: honeydew;
+    cursor: pointer;
+}
